@@ -1,0 +1,698 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  background-color: #fff7f1;
+  overflow-x: hidden;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 300% 300%;
+  animation: gradient-animation 10s ease infinite;
+  height: 95vh;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+nav {
+  position: relative;
+  width: 100vw;
+  background-color: transparent;
+  overflow-x: hidden;
+}
+
+.nav-elements ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1px;
+  margin: 20px 40px;
+  list-style: none;
+}
+
+.nav-elements ul a {
+  color: rgb(236, 231, 231);
+  font-size: large;
+}
+
+.nav-elements ul a:hover {
+  color: rgb(0, 0, 0);
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+#id-name {
+  color: rgb(64, 224, 208);
+}
+
+#element {
+  color: rgb(0, 0, 0);
+}
+
+.personal-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 53px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  animation: img 2s infinite;
+}
+
+@keyframes img {
+  0% {
+    transform: translateY(12px);
+  }
+
+  50% {
+    transform: translateY(25px);
+  }
+
+  100% {
+    transform: translateY(12px);
+  }
+}
+
+#Skills {
+  position: relative;
+  background-color: rgba(7, 7, 7, 0.94);
+  mask-image: url(./Content/MERN.jpg);
+  width: 100vw;
+}
+
+.top button {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 89vh;
+  right: 20px;
+  z-index: 1000;
+  color: #ff4c67b7;
+  background-color: rgba(0, 0, 0, 0.288);
+  border-radius: 40px;
+  border: none;
+  height: 20px;
+  width: 80px;
+  font-size: 12px;
+  padding: 19px;
+  animation: img 2.5s infinite;
+}
+
+.skills-top,
+.skills-bottom {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.skills-container {
+  position: relative;
+  height: fit-content;
+}
+
+.skills-container p {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  rotate: 270deg;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.904);
+  text-decoration: underline;
+  text-decoration-color: yellow;
+  margin-top: 5rem;
+}
+
+#html,
+#css,
+#js,
+#python,
+#c {
+  margin: 0.8rem 3rem;
+}
+
+#html:hover,
+#css:hover,
+#js:hover,
+#python:hover,
+#c:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+#mern:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+#mern {
+  display: flex;
+  justify-content: center;
+}
+
+#mern img {
+  height: auto;
+  width: 50vw;
+  border-radius: 20px;
+}
+
+#Projects {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(9, 9, 22);
+  height: 280vh;
+  width: 100vw;
+}
+
+.projects-section p {
+  position: absolute;
+  display: grid;
+  float: right;
+  top: 10vh;
+  left: 90vw;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 204, 255);
+  color: white;
+  rotate: 90deg;
+  z-index: 0;
+}
+a {
+  border: 2px solid transparent;
+  color: #ffffff;
+  text-decoration: none;
+  transition: border-color 0.3s;
+}
+
+#bingeAnime img {
+  height: 65vh;
+  width: fit-content;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+#bingeAnime {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 28vh;
+  left: 1vw;
+  margin: 1px;
+}
+
+#bingeAnime span {
+  color: rgb(147, 189, 224);
+  font-size: 15px;
+}
+
+#bingeAnime h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+  color: rgb(0, 195, 255);
+}
+
+#bingeAnime img:hover,
+h3:hover {
+  transform: scale(1.01);
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+#bingeAnime .buttons button {
+  margin-top: 20px;
+  margin-left: 120px;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+  width: 10vw;
+  background-color: #72ccef;
+  animation: img 1.3s infinite;
+}
+
+#bingeAnime .buttons .html {
+  margin-right: -5rem;
+}
+
+#amplify {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  top: 110vh;
+  left: 1vw;
+}
+
+#amplify img {
+  height: 60vh;
+  width: 50vw;
+  margin-right: 20px;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+
+#amplify img:hover {
+  transform: scale(1.02);
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+#amplify h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+  color: rgb(255, 238, 0);
+}
+
+#amplify span {
+  color: rgb(147, 189, 224);
+  font-size: 15px;
+}
+
+#amplify .buttons button {
+  margin-top: 20px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+  width: 10vw;
+  background-color: rgb(255, 238, 0);
+  animation: img 1.3s infinite;
+}
+
+#amplify .buttons .html,
+.css,
+.js,
+.jquery {
+  margin: 5px;
+}
+
+#dice {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 200vh;
+  right: 1vw;
+}
+
+#dice img {
+  height: 60vh;
+  width: 50vw;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+  float: left;
+}
+
+#dice img:hover {
+  transform: scale(1.02);
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+#dice h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  margin-bottom: 1rem;
+  color: rgb(4, 224, 140);
+}
+
+#dice span {
+  color: rgb(142, 243, 200);
+  font-size: 15px;
+}
+
+#dice .buttons button {
+  margin-top: 20px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 20px;
+  padding: 5px;
+  width: 10vw;
+  background-color: rgb(4, 224, 140);
+  animation: img 1.3s infinite;
+}
+
+#dice .buttons .html,
+.css,
+.js,
+.jquery {
+  margin: 5px;
+}
+
+.cards-text {
+  color: rgba(22, 7, 7, 0.671);
+}
+
+#testimonial {
+  position: relative;
+  height: 90vh;
+  width: 100vw;
+  background-color: #fff7f1;
+}
+
+.profile {
+  height: 25vh;
+  width: 100vw;
+}
+
+.Connect-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 14vw 5vh 14vw;
+  height: 10vh;
+  width: 70vw;
+  background-color: aqua;
+  color: azure;
+  border-radius: 50px;
+  background: linear-gradient(300deg, #00bfff, #ca1d88da, #ff4c68);
+  background-size: 300% 300%;
+  animation: gradient-animation 5s ease infinite;
+  padding: 20px;
+}
+#Second-pvt-pic {
+  position: relative;
+  left: 44vw;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+
+.location {
+  position: relative;
+  left: 43vw;
+  top: 4vh;
+}
+.Fst-row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30vh;
+  padding: 1rem;
+  top: -13vh;
+}
+.Snd-row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30vh;
+  padding: 1rem;
+  top: -26vh;
+}
+.social button {
+  position: absolute;
+  height: 10vh;
+  border: none;
+  border-radius: 20px;
+  width: 17vw;
+  background: linear-gradient(300deg, #e7f3ff, #fc0000, #f7141462);
+  background-size: 300% 300%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+.instagram:hover,
+.github:hover,
+.twitter:hover,
+.linkedin:hover {
+  transform: scale(1.05);
+  transition: transform 1s;
+}
+
+@media (max-width: 768px) {
+  .personal-img {
+    max-width: 80%;
+    border-radius: 17%;
+    margin: 0px 59px;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .gradient-background {
+    height: 75vh;
+  }
+  #Skills {
+    position: relative;
+    background-color: rgba(7, 7, 7, 0.94);
+    mask-image: url(./Content/MERN.jpg);
+    width: 100vw;
+  }
+  .skills-container {
+    position: relative;
+    height: 75vh;
+  }
+  .skills-top,
+  .skills-bottom {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .skills-container {
+    position: relative;
+    height: 60vh;
+  }
+  .skills-container p {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    rotate: 270deg;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.904);
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    margin-top: 24vh;
+  }
+
+  #html,
+  #css,
+  #js,
+  #python,
+  #c {
+    margin: 5vh 1rem;
+  }
+  #html svg,
+  #css svg,
+  #js svg,
+  #python svg,
+  #c svg {
+    height: 10vh;
+  }
+  #Projects {
+    height: 250vh;
+  }
+  .projects-section p {
+    position: absolute;
+    display: grid;
+    float: right;
+    top: 5vh;
+    left: 84vw;
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 204, 255);
+    color: white;
+    rotate: 90deg;
+    z-index: 0;
+  }
+  #bingeAnime img {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    width: 80vw;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+  #bingeAnime {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1px;
+    top: 10vh;
+  }
+
+  #bingeAnime span {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 10px;
+    color: rgb(147, 189, 224);
+    font-size: 15px;
+  }
+
+  #bingeAnime h3 {
+    font-size: 1.5em;
+    color: rgb(0, 195, 255);
+  }
+  #bingeAnime .buttons {
+    margin-left: -34px;
+  }
+  #bingeAnime .buttons button {
+    width: 20vw;
+  }
+  #amplify img {
+    position: relative;
+    top: -58vh;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    width: 80vw;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+  }
+
+  #amplify {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1px;
+  }
+
+  #amplify span {
+    position: relative;
+    top: 5vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 28px;
+    font-size: 15px;
+  }
+
+  #amplify h3 {
+    font-size: 1.5em;
+  }
+  #amplify .buttons {
+    margin-left: 0vw;
+  }
+  #amplify .buttons button {
+    width: 25vw;
+  }
+  #dice img {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    width: 80vw;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-bottom: 15vh;
+  }
+
+  #dice {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1px;
+    top: 170vh;
+  }
+
+  #dice span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+  #dice h3 {
+    position: absolute;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 6vw;
+    margin-left: 20px;
+    top: 25vh;
+  }
+  #dice .buttons {
+    position: relative;
+    margin-left: -6px;
+    top: 2vh;
+  }
+  #dice .buttons button {
+    width: 20vw;
+  }
+  #testimonial {
+    width: 100vw;
+  }
+  .Connect-main {
+    margin-top: 15vh;
+  }
+  .profile {
+    position: relative;
+    left: -13vw;
+    height: 25vh;
+    width: 100vw;
+  }
+  .social {
+    position: relative;
+    top: -14vh;
+  }
+  .linkedin {
+    position: relative;
+    top: 10vh;
+  }
+  .instagram {
+    position: relative;
+    top: 22vh;
+  }
+  .twitter{
+    position: relative;
+    top: 14vh;
+  }
+  .github {
+    position: relative;
+    top: 26vh;
+  }
+  .social button {
+    height: 10vh;
+    border: none;
+    left: 14vw;
+    border-radius: 20px;
+    width: 65vw;
+  }
+}
