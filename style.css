@@ -375,9 +375,9 @@ h3:hover {
 
 #testimonial {
   position: relative;
-  height: 90vh;
+  height: 92vh;
   width: 100vw;
-  background-color: #fff7f1;
+  background-color: #03091b;
 }
 
 .profile {
@@ -389,10 +389,10 @@ h3:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 14vw 5vh 14vw;
+  margin: 10px 14vw 35vh 14vw;
   height: 10vh;
   width: 70vw;
-  background-color: aqua;
+  background-color: rgb(0, 0, 0);
   color: azure;
   border-radius: 50px;
   background: linear-gradient(300deg, #00bfff, #ca1d88da, #ff4c68);
@@ -400,34 +400,21 @@ h3:hover {
   animation: gradient-animation 5s ease infinite;
   padding: 20px;
 }
-#Second-pvt-pic {
-  position: relative;
-  left: 44vw;
-  border-radius: 100%;
-  width: 150px;
-  height: 150px;
-}
 
-.location {
-  position: relative;
-  left: 43vw;
-  top: 4vh;
-}
 .Fst-row {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30vh;
+  margin-top: 17vh;
   padding: 1rem;
-  top: -13vh;
 }
 .Snd-row {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30vh;
+  margin-top: 4vh;
   padding: 1rem;
   top: -26vh;
 }
@@ -437,9 +424,7 @@ h3:hover {
   border: none;
   border-radius: 20px;
   width: 17vw;
-  background: linear-gradient(300deg, #e7f3ff, #fc0000, #f7141462);
-  background-size: 300% 300%;
-  animation: gradient-animation 10s ease infinite;
+  background: rgba(0, 187, 187, 0.226);
 }
 
 .instagram:hover,
@@ -447,7 +432,7 @@ h3:hover {
 .twitter:hover,
 .linkedin:hover {
   transform: scale(1.05);
-  transition: transform 1s;
+  transition: transform 0.2s;
 }
 
 @media (max-width: 768px) {
