@@ -106,8 +106,8 @@ nav {
   top: 89vh;
   right: 20px;
   z-index: 1000;
-  color: #ff4c67b7;
-  background-color: rgba(0, 0, 0, 0.288);
+  color: #ff4c67;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 40px;
   border: none;
   height: 20px;
@@ -375,8 +375,9 @@ h3:hover {
 
 #testimonial {
   position: relative;
-  height: 92vh;
+  height: 84vh;
   width: 100vw;
+  top: -2vh;
   background-color: #03091b;
 }
 
@@ -424,7 +425,7 @@ h3:hover {
   border: none;
   border-radius: 20px;
   width: 17vw;
-  background: rgba(0, 187, 187, 0.226);
+  background: rgba(0, 187, 187, 0.493);
 }
 
 .instagram:hover,
@@ -501,7 +502,7 @@ h3:hover {
     height: 10vh;
   }
   #Projects {
-    height: 250vh;
+    height: 260vh;
   }
   .projects-section p {
     position: absolute;
@@ -611,6 +612,7 @@ h3:hover {
     flex-wrap: wrap;
     margin: 1px;
     top: 170vh;
+    height: max-content;
   }
 
   #dice span {
@@ -639,13 +641,13 @@ h3:hover {
     top: 2vh;
   }
   #dice .buttons button {
-    width: 20vw;
+    position: relative;
+    min-width: 20vw;
+    width: fit-content;
+    left: 10vw;
   }
   #testimonial {
     width: 100vw;
-  }
-  .Connect-main {
-    margin-top: 15vh;
   }
   .profile {
     position: relative;
@@ -653,31 +655,28 @@ h3:hover {
     height: 25vh;
     width: 100vw;
   }
-  .social {
-    position: relative;
-    top: -14vh;
+  .Fst-row {
+    margin-top: -10vh;
+  }
+  .twitter {
+    margin-top: 15vh;
   }
   .linkedin {
-    position: relative;
-    top: 10vh;
+    margin-top: 11vh;
   }
   .instagram {
-    position: relative;
-    top: 22vh;
-  }
-  .twitter{
-    position: relative;
-    top: 14vh;
+    margin-top: 25vh;
   }
   .github {
-    position: relative;
-    top: 26vh;
+    margin-top: 0px;
   }
   .social button {
     height: 10vh;
-    border: none;
     left: 14vw;
-    border-radius: 20px;
+    border-top-left-radius: 100px;
     width: 65vw;
+  }
+  .Footer {
+    background: #ffffff83;
   }
 }
