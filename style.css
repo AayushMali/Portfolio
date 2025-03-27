@@ -77,14 +77,48 @@ nav {
   transition: transform 0.5s;
 }
 
-.contact-btn{
-  padding: 21px ;
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.contact-btn:hover, .contact-btn-resume-btn:hover {
-  color: #000;
-
+.contact-btn, .resume-btn {
+  font-family: monospace;
+  font-size: 16px;
+  padding: 12px 20px;
+  background: none;
+  color: #ffffff;
+  border: 2px solid #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
 }
+
+/* Flickering text */
+.contact-btn span, .resume-btn span {
+  display: inline-block;
+}
+
+/* Button Hover Effect */
+.contact-btn:hover, .resume-btn:hover {
+  background: rgba(0, 0, 0, 0.349);
+  box-shadow: 0 0 8px rgb(0, 0, 0);
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .hero-actions {
+    flex-direction: row;
+  }
+}
+
 
 #id-name {
   color: rgb(64, 224, 208);
