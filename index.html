@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <!-- Hero Section-->
+  <!-- Hero Section -->
   <section id="Hero" class="gradient-background">
     <nav>
       <div class="nav-elements">
@@ -23,7 +23,7 @@
             <li>Skills</li>
           </a>
           <a href="#Projects">
-            <li>Project</li>
+            <li>Projects</li>
           </a>
           <a href="#testimonial">
             <li>Connect</li>
@@ -34,17 +34,26 @@
     <div class="container">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-6 col-lg-4">
-          <img src="./Content/programming-concept-illustration.png" class="personal-img" height="700" />
+          <img src="./Content/programming-concept-illustration.png" class="personal-img" height="700" alt="Hero Image" />
         </div>
         <div class="col-lg-6">
           <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 p-4">
-            Hi i'm <span id="id-name">Aayush Mali</span> <br /><span id="element"></span>
+            Hi, I'm <span id="id-name">Aayush Mali</span> <br />
+            <span id="element"></span>
           </h1>
+          <p class="hero-description">
+            A passionate Web Developer and Programmer with expertise in creating modern, responsive, and user-friendly
+            web applications.
+          </p>
+          <div class="hero-actions">
+            <a href="#Projects" class="contact-btn">🚀 View Projects</a>
+            <a href="./Content/Aayush Mali New Resume.pdf" download class="contact-btn resume-btn">📄 Download Resume</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Skills -->
+  <!-- Skills Section -->
   <section id="Skills">
     <div class="skills-container">
       <p>Skills</p>
@@ -115,13 +124,13 @@
       </div>
     </div>
   </section>
-  <!-- Projects-->
+  <!-- Projects Section -->
   <section id="Projects">
     <div class="projects-section">
       <p>Projects</p>
       <div id="bingeAnime">
         <picture><a href="https://aayushmali.github.io/BingeAnime/" target="_blank"><img
-              src="./Content/Cards/Screenshot_23-7-2024_153532_.jpeg" alt="" /></a></picture>
+              src="./Content/Cards/Screenshot_23-7-2024_153532_.jpeg" alt="Binge Anime" /></a></picture>
         <span>
           <a href="https://aayushmali.github.io/BingeAnime/" target="_blank">
             <h3>Binge Anime - Anime Streaming Web Application</h3>
@@ -131,9 +140,9 @@
           and user experience, I incorporated smooth hover effects and a clean
           layout to make browsing enjoyable. This project reflects my effort
           to create visually appealing and well-structured websites.
-          <div class="buttons">
-            <button class="html">HTML</button>
-            <button>CSS</button>
+          <div class="buttons"> 
+            <button class="html">Html</button>
+            <button class="css">css</button>
           </div>
         </span>
       </div>
@@ -178,7 +187,7 @@
       </div>
     </div>
   </section>
-  <!-- Connect-->
+  <!-- Connect Section -->
   <section id="testimonial">
     <h2 class="Connect-main">Connect Here :</h2>
     <div class="container">
@@ -210,12 +219,11 @@
       </div>
     </div>
   </section>
-  <!--Footer-->
-  <div class="container">
-    <footer class="Footer">
-      <p class="text-center text-body-secondary">© 2024 Aayush Mali, Inc</p>
-    </footer>
-  </div>
+
+  <!-- Footer -->
+  <footer class="Footer">
+    <p class="text-center text-body-secondary">© 2024 Aayush Mali, Inc</p>
+  </footer>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed("#element", {
