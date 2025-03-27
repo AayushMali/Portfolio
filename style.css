@@ -77,6 +77,15 @@ nav {
   transition: transform 0.5s;
 }
 
+.contact-btn{
+  padding: 21px ;
+}
+
+.contact-btn:hover, .contact-btn-resume-btn:hover {
+  color: #000;
+
+}
+
 #id-name {
   color: rgb(64, 224, 208);
 }
