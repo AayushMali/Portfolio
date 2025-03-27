@@ -421,6 +421,7 @@ h3:hover {
   width: 10vw;
   background-color: rgb(4, 224, 140);
   animation: img 1.3s infinite;
+  flex-wrap: wrap; 
 }
 
 #dice .buttons .html,
@@ -506,13 +507,19 @@ h3:hover {
   }
 }
 
+@media (max-width: 370px) { 
+    .gradient-background {
+    height: 150vh;
+    }
+}
+
 @media (max-width: 480px) {
   body {
     width: 100vw;
     overflow-x: hidden;
   }
   .gradient-background {
-    height: 75vh;
+    height: 80vh;
   }
   #Skills {
     position: relative;
@@ -698,7 +705,7 @@ h3:hover {
   }
   #dice .buttons {
     position: relative;
-    margin-left: -6px;
+    margin-left: -48px;
     top: 2vh;
   }
   #dice .buttons button {
