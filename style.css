@@ -519,7 +519,7 @@ h3:hover {
     overflow-x: hidden;
   }
   .gradient-background {
-    height: 100vh;
+    height: 105vh;
   }
   #Skills {
     position: relative;
@@ -559,7 +559,7 @@ h3:hover {
     flex-direction: column;
     gap: 12px;
     align-items: center;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
 }
 
   #html,
